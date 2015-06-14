@@ -5,7 +5,9 @@
     <bookmark url="file://$PROJECT_DIR$/resources/views/TodoApp/header.blade.php" line="450" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe8459d1-6dea-4999-b337-ff091298b9fe" name="Default" comment="" />
+    <list default="true" id="fe8459d1-6dea-4999-b337-ff091298b9fe" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    </list>
     <ignored path="laravel.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -108,7 +110,7 @@
       <file leaf-file-name="AuthenticatesAndRegistersUsers.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.010638298" vertical-offset="570" max-vertical-offset="2646">
+            <state vertical-scroll-proportion="-2.6702127" vertical-offset="2082" max-vertical-offset="2646">
               <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
               <folding>
                 <element signature="e#45#73#0#PHP" expanded="true" />
@@ -138,6 +140,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -197,7 +202,7 @@
     <option name="width" value="1366" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -736,7 +741,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.010638298" vertical-offset="570" max-vertical-offset="2646">
+        <state vertical-scroll-proportion="-2.6702127" vertical-offset="2082" max-vertical-offset="2646">
           <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
           <folding>
             <element signature="e#45#73#0#PHP" expanded="true" />
