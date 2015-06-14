@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>jQuery UI Slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/header-mobile.css">
+  </head>
+<body>
+<!-- Header -->
+<div class="header-container">
+  <header class="header">
+    <div class="left-panel">
+      <div class="logo">
+        <a href="#"><img src="images/icons/logo-mobile.png" alt=""></a>
+      </div>
+      <div class="header-btns clearfix">
+        <div class="header-nav-main">
+          <button class="open-nav">
+            <span></span>
+          </button>
+          <nav class="nav-dropdawn">
+              <ul>
+                <li class="sp-video">
+                <a href="#"> 
+                  <div class="img"><img src="images/icons/sp-video-icon.png" alt=""></div>
+                  <p><span>sp</span>video</p>
+                </a>
+                </li>
+                <li class="sp-news">
+                <a href="#">
+                  <div class="img"><img src="images/icons/sp-news-icon.png" alt=""></div>
+                  <p><span>sp</span>news</p>
+                </a>
+                </li>
+                <li class="sp-catalog">
+                <a href="#">
+                  <div class="img"><img src="images/icons/sp-catalog-icon.png" alt=""></div>
+                  <p><span>sp</span>catalogue</p>
+                </a>
+                </li>
+                <li class="sp-music">
+                <a href="#">
+                  <div class="img"><img src="images/icons/sp-music-icon.png" alt=""></div>
+                  <p><span>sp</span>music</p>
+                  </a>
+                </li>
+                <li class="sp-afisha">
+                  <a href="#">
+                  <div class="img"><img src="images/icons/sp-afisha-icon.png" alt=""></div>
+                  <p><span>sp</span>afisha</p>
+                  </a>
+                </li>
+                <li class="sp-book">
+                  <a href="#">
+                    <div class="img"><img src="images/icons/sp-book-icon.png" alt=""></div>
+                    <p><span>sp</span>books</p>
+                  </a>
+                </li>
+              </ul>
+          </nav>
+        </div>
+        <div class="header-nav-name">
+          <button class="open-nav">
+            <span class="first"></span>
+            <span class="hidden"></span>
+            <span class="last"></span>
+          </button>
+          <nav class="nav-dropdawn">
+            <ul>
+              <li class="item">
+                <a href="#">
+                  <div class="icon-wrap"><img src="images/icons/nav-icon_1.png" alt=""></div>
+                  <div class="name">О компании</div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#">
+                  <div class="icon-wrap"><img src="images/icons/nav-icon_2.png" alt=""></div>
+                  <div class="name">Партнерам</div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#">
+                  <div class="icon-wrap"><img src="images/icons/nav-icon_3.png" alt=""></div>
+                  <div class="name">Рекламодателям</div>
+                </a>
+              </li>
+              <li class="item">
+                <a href="#">
+                  <div class="icon-wrap"><img src="images/icons/nav-icon_4.png" alt=""></div>
+                  <div class="name">Контакты</div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="language">
+        <a href="#" class="current open-nav">ua</a>
+        <div class="language-dropdawn nav-dropdawn" style="display: none;">
+          <a href="/page/lang/en/1/d">Eng</a>
+          <a href="/page/lang/ru/1/d">Рус</a>
+        </div>
+      </div>
+      <div class="user">
+        <button class="open-nav"><span class="user-icon"><span class="number-info number-sum">5</span></span></button>
+        <nav class="nav-dropdawn">
+          <ul class="nav-list">
+            <li class="user-name">Ігор</li>
+            <li>
+              <div class="my-glory">
+                <span class="number-glory">525</span>
+                <div class="glory-text">
+                  <span class="points">sp</span>баллы
+                </div>
+              <div>
+            </li>
+            <li><a href="#"><span class="points">sp</span>вопросы<span class="number-info">2</span></a></li>
+            <li><a href="#">Личные данные<span class="number-info">2</span></a></li>
+          </ul>
+          <div class="nav-bot">
+            <a href="#" data-target="sidebar-callback" class="callback sidebar-open-link">Обратная связь</a>
+            <a href="#" class="come-out">Выйти</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+</div>
+<!-- Header end -->
+<div class="sidebar-wrapper">
+  <aside class="home-sidebar sidebar-callback">
+    <a href="#" class="sidebar-close"></a>
+    <div class="sidebar-scroll scroll-pane">
+    <div class="sidebar-container">
+      <div class="sidebar-inner">
+      <form action="" class="callback-form">
+        <div class="sidebar-title">Обратная связь</div>
+        <div class="under-title">Если вы хотите задать нам вопрос, стать нашим партнером, разместить рекламу, поддержать нас или предложить что-то необыкновенное – пишите.
+        </div>
+        <input type="text" placeholder="Имя" class="name">
+        <input type="text" placeholder="E-mail" class="email">
+        <textarea name=""></textarea>
+        <button class="btn-send">Отправить</button>
+      </form>
+      </div>
+      </div>
+    </div>
+  </aside>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/header-mobile.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>

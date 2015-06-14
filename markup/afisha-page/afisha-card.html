@@ -1,0 +1,320 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Book Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/lightGallery.css">
+    <link rel="stylesheet" type="text/css" href="css/main-header.css">
+    <link rel="stylesheet" type="text/css" href="css/book-style.css">
+  </head>
+<body class="book-card-page">
+<!-- Current page -->
+<div class="current-page">
+  <video autoplay loop class="b-video" poster="images/landing_bg.png"> 
+    <source src="images/landing.mp4" type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'>
+    <source src="images/landing.webm" type='video/webm; codecs="vp8.0, vorbis"'>
+    <source src="images/landing.ogv" type='video/ogg; codecs="theora, vorbis"'>
+  </video>
+  <div class="current-page-name sp-book">
+    <div class="img"><img src="images/icons/sp-book-icon.png" alt=""></div>
+    <p><span>sp</span>book</p>
+  </div>
+</div>
+<!-- Current page end -->
+<!-- Main Container -->
+<div class="b-container__nav">
+  <nav class="b-nav">
+    <div class="b-nav__search">
+      <form class="b-search">
+        <input type="search" name="q" placeholder="поиск" class="b-search__search">
+        <input type="submit" value="" class="b-search__submit">
+      </form>
+    </div>
+    <div class="b-nav__nav-menu">
+      <ul class="b-nav-menu">
+        <li class="b-nav-menu__item"><a href="#" class="b-nav-menu__link">sp top<span class="b-icon__point"></span></a></li>
+        <li class="b-nav-menu__item"><a href="#" class="b-nav-menu__link">каталог<span class="b-icon__point  b-icon__point-active"></span></a></li>
+        <li class="b-nav-menu__item"><a href="#" class="b-nav-menu__link">отложенные<span class="b-icon__point"></span></a></li>
+        <li class="b-nav-menu__item"><a href="#" class="b-nav-menu__link">oтбор<span class="b-icon__point"></span></a></li>
+        <li class="b-nav-menu__item"><a href="#" class="b-nav-menu__link">моя библеотека<span class="b-nav-menu__link-number">2556</span><span class="b-icon__point"></span></a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="book-card-container">
+  <!-- Description -->
+  <div class="description clearfix">
+    <div class="left-panel">
+      <div class="poster">
+        <img src="images/posters/main-poster.jpg" alt="">
+      </div>
+      <div class="star-rating rating-medium rating">
+        <span class="star star-mediun-gold" data-number='1'></span>
+        <span class="star star-mediun-gold-active" data-number='2'></span>
+        <span class="star star-mediun-white" data-number='3'></span>
+        <span class="star star-mediun-white-active" data-number='4'></span>
+        <span class="star star-mediun-white" data-number='5'></span>
+        <button class="star-btn add"></button>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="description-name">Пятьдесят оттенков серого</div>
+      <div class="description-name_low">Exodus: Gods and Kings</div>
+      <div class="sections-wrap">
+        <section class="clearfix">
+          <div class="title"><span>Автор:</span></div>
+          <div class="info">
+            <a href="/" class="link-btn">Кристиан Бэйл</a>
+          </div>
+        </section>
+        <section class="clearfix">
+          <div class="title"><span>Жанр:</span></div>
+          <div class="info">
+            <a href="/" class="link-btn">Алехандро</a>
+            <a href="/" class="link-btn">Николас Джакобоне</a>
+          </div>
+        </section>
+        <section class="clearfix">
+          <div class="title"><span>Год:</span></div>
+          <div class="info">
+            <a href="/" class="link-btn">9999</a>
+          </div>
+        </section>
+        <section class="clearfix">
+          <div class="title"><span>Оператор</span></div>
+          <div class="info">
+            <a href="/" class="link-btn">Любецки</a>
+            <a href="/" class="link-btn">Эммануэль</a>
+            <a href="/" class="link-btn">Эммануэль</a>
+          </div>
+        </section>
+        <section class="clearfix">
+          <div class="title"><span>Композитор</span></div>
+          <div class="info">
+            <a href="/" class="link-btn">Санчес</a>
+            <a href="/" class="link-btn">Санчес</a>
+          </div>
+        </section>
+        <section class="clearfix">
+          <div class="title"><span>Художник</span></div>
+          <div class="info">
+            <a href="/" class="link-btn">Кевин Томпсон</a>
+            <a href="/" class="link-btn">Альберт Вольски</a>
+          </div>
+        </section>
+        <section class="clearfix">
+          <div class="title"><span>Бюджет</span></div>
+          <div class="info">
+            <div class="icon"><img src="images/icons/book-icon.png" alt=""></div>
+            <span class="text">500 стр., 1 иллюстрация</span>
+          </div>
+        </section>
+        <div class="description-footer">
+          <div class="description-btn_group">
+            <a href="/" class="description-btn description-btn_read">Читать</a>
+            <a href="/" class="description-btn description-btn_listen">Слушать</a>
+          </div>
+          <div class="description-socials">
+            <a href="#" class="description-social_link description-social_tw">1</a>
+            <a href="#" class="description-social_link description-social_vk">0</a>
+            <a href="#" class="description-social_link description-social_fb">6</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-description">
+        <p>Ветхозаветная история о великом пророке Моисее и освобождении еврейского народа из египетского плена. Моисей появился на свет в те времена, когда фараон приказал убивать всех новорожденных мальчиков еврейского происхождения. Чтобы спасти его, мать положила малыша в корзину из тростника и отправила вниз по Нилу.</p>
+        <p>Ребенка нашла дочь фараона, которая усыновила его и растила рядом с Рамсесом — будущим фараоном. Много лет спустя, став мужчиной, Моисей бежит из Египта, а затем возвращается туда по велению Господа, чтобы избавить свой народ от оков рабства…</p>
+      </div>
+  </div>
+  <!-- Description end -->
+
+  <!-- Seems Books -->
+  <div class="seems-books">
+    <div class="title">Похожие фильмы</div>
+    <ul class="books-list clearfix">
+      <li class="book">
+        <a href="/">
+          <div class="img" style="background-image: url(images/seems-books/item1.jpg)"></div>
+          <div class="name">Клуб «Грусть»</div>
+          <div class="country">2011, США</div>
+        </a>
+      </li>
+      <li class="book">
+        <a href="/">
+          <div class="img" style="background-image: url(images/seems-books/item1.jpg)"></div>
+          <div class="name">Пятьдесят оттенков серого</div>
+          <div class="country">2013, Россия, Беларусь</div>
+        </a>
+      </li>
+      <li class="book">
+        <a href="/">
+          <div class="img" style="background-image: url(images/seems-books/item1.jpg)"></div>
+          <div class="name">Иван Царевич и Серый Волк</div>
+          <div class="country">1968, СССР</div>
+        </a>
+      </li>
+      <li class="book">
+        <a href="/">
+          <div class="img" style="background-image: url(images/seems-books/item1.jpg)"></div>
+          <div class="name">Кот Саймона</div>
+          <div class="country">2008, Великобритания</div>
+        </a>
+      </li>
+      <li class="book">
+        <a href="/">
+          <div class="img" style="background-image: url(images/seems-books/item1.jpg)"></div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- Seems Books end -->
+  
+  <!-- Reviews -->
+  <div class="reviews-container">
+    <form action="" class="reviews-inner">
+      <div class="review-head">
+        <div class="review-sort">
+          Сортировать:
+          <a href="#" class="review-sort_link">ТОП комментарии</a>
+        </div>
+        <a href="#" class="review-leave_comment">Оставить комментарий <span class="review-comments_count">2522</span></a>
+      </div>
+      <div class="textarea-container">
+        <div class="textarea-inner clearfix">
+          <button class="send"></button>
+          <div class="textarea-wrap">
+            <textarea  class="normal" placeholder="Введите сообщение"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-wrap">
+        <div class="review clearfix">
+          <div class="right-section">
+            <div class="likes">
+              <span class="minus"></span>
+              <span class="value">2</span>
+              <span class="plus"></span>
+            </div>
+          </div>
+          <div class="left-section clearfix">
+            <div class="icon"><img src="images/avatars/avatar1.jpg" alt=""></div>
+            <div class="review-body">
+              <div class="name-author">Manny Ribera</div>
+              <div class="days">4 дня назад</div>
+              <div class="comment">Так накануне Нового года неудачей закончилась попытка захвата («национализации») главной.</div>
+            </div>
+          </div>
+        </div>
+        <div class="review clearfix">
+          <div class="right-section">
+            <div class="likes">
+              <span class="minus"></span>
+              <span class="value">0</span>
+              <span class="plus"></span>
+            </div>
+          </div>
+          <div class="left-section clearfix">
+            <div class="icon"><img src="images/avatars/avatar1.jpg" alt=""></div>
+            <div class="review-body">
+              <div class="name-author">Manny Ribera</div>
+              <div class="days">4 дня назад</div>
+              <div class="comment">Так накануне Нового года неудачей закончилась попытка захвата («национализации») главной украинской артерии с нефтепродуктами — трубы «Транснефти» в Венгрию. Защищали российскую трубу не сотрудники охранного предприятия и не «отпускные» российские военные — помощь подоспела со</div>
+            </div>
+          </div>
+        </div>
+        <div class="review clearfix">
+          <div class="right-section">
+            <div class="likes">
+              <span class="minus"></span>
+              <span class="value">-1</span>
+              <span class="plus"></span>
+            </div>
+          </div>
+          <div class="left-section clearfix">
+            <div class="icon"><img src="images/avatars/avatar1.jpg" alt=""></div>
+            <div class="review-body">
+              <div class="name-author">Manny Ribera</div>
+              <div class="days">4 дня назад</div>
+              <div class="comment">Так накануне Нового года неудачей закончилась попытка захвата («национализации») главной.</div>
+            </div>
+          </div>
+        </div>
+        <div class="review clearfix">
+          <div class="right-section">
+            <div class="likes">
+              <span class="minus"></span>
+              <span class="value">-2</span>
+              <span class="plus"></span>
+            </div>
+          </div>
+          <div class="left-section clearfix">
+            <div class="icon"><img src="images/avatars/avatar1.jpg" alt=""></div>
+            <div class="review-body">
+              <div class="name-author">Manny Ribera</div>
+              <div class="days">4 дня назад</div>
+              <div class="comment">Так накануне Нового года неудачей закончилась попытка захвата («национализации») главной.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="show-other">
+        <a href="/" class="show">Показать последние 100 комментариев из 135</a>
+      </div>
+    </form>
+  </div>
+  <!-- Reviews -->
+
+</div>
+<!-- Main Container end -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <!-- the jScrollPane script -->
+<script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+<script type="text/javascript" src="js/star_rating.js"></script>
+<script type="text/javascript" src="js/jquery.autosize.min.js"></script>
+<script type="text/javascript" src="js/lightGallery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  // Player end //
+   $('.normal').autosize();
+  // Scroll Pane
+  $(function() {
+    $('.trailer-pane').jScrollPane({showArrows: true});
+  });
+
+  $(window).resize(function(){
+    $(function() {
+      $('.trailer-pane').jScrollPane({showArrows: true});
+    });
+  });
+
+  $('.trailers-section').on('click' , function(){
+
+    $(function() {
+      $('.trailer-pane').jScrollPane({showArrows: true});
+    });
+  });
+  $("#light-gallery1,#light-gallery2,#light-gallery3,#light-gallery4,#light-gallery5,#light-gallery6,#light-gallery7,#light-gallery8,#light-gallery9,#light-gallery10,#light-gallery11,#light-gallery12,#light-gallery13,#light-gallery14").lightGallery({
+    closable: false,
+    counter: true,
+    thumbnail: false,
+    loop: true
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+$(".b-nav-menu__link").hover(function() {
+$(this).children(".b-icon__point").addClass("animated bounceIn");
+},function() {
+$(this).children(".b-icon__point").removeClass("animated bounceIn");
+});
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>SlavPeople</title>
+	<meta name = "description" content="Slavpeople">
+	<meta name = "keywords" content="Slavpeople">
+	<meta name="author" content="Slavpeople">
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="stylesheets/video.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/animate.css" />
+
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<!--<script src="js/jquery-ui.js"></script>-->
+	<!--<script src="js/video.js"></script>-->
+</head>
+<body>
+<div class="b-container choose">
+	<div class="b-header"></div>
+<div class="b-container__content">
+		<div id="b-icon-menu__menu">
+			<ul class="b-icon-menu">
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon-menu__text">все</span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu1"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu2"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu3"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu4"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu5"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu6"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu7"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu8"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu9"></span></a></li>
+			</ul>
+		</div>
+		<div class="b-container__info">
+			<div class="b-info">
+				<div class="b-info__pay-blur b-icon__none">
+					<a class="b-info__pay_link" href="#">
+						<span class="b-icon__pay"></span>
+					</a>
+				</div>
+				<div class="b-info__free b-icon__none">
+					<a class="b-info__free_link" href="#">
+						<span class="b-text__free">free</span>
+					</a>
+				</div>
+				<div class="b-info__comingSoon-blur b-icon__none">
+					<a class="b-info__comingSoon_link" href="#">
+						coming<br><span class="b-text__comingSoon-up">soon</span>
+					</a>
+				</div>
+				<div class="b-info__star">
+					<a class="b-info__star_link" href="#">
+						<span class="b-star"></span>
+						<span class="b-icon__show"></span>
+					</a>
+				</div>
+				<div class="b-info__week">
+					<a class="b-info__week_link" href="#">
+						<span class="b-week"></span>
+						<span class="b-icon__notshow"></span>
+					</a>
+				</div>
+				<div class="b-info__date b-icon__none">
+					<a href="#" class="b-info__date_link">
+						по<br><span class="b-text__date">ДАТЕ</span>
+					</a>
+				</div>
+				<div class="b-info__kinopoick b-icon__none">
+					<a class="b-info__kinopoick_link" href="#">kinopoick
+					</a>
+				</div>
+				<div class="b-info__imdb b-icon__none">
+					<a class="b-info__imdb_link" href="#">IMDb
+					</a>
+				</div>
+				<div class="b-info__tommato b-icon__none">
+					<a class="b-info__tommato_link" href="#">rotten<br><span class="b-text__tommato-up"> tomatoes</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	<div class="b-content">
+		<div class="b-container__box">
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-white">
+						<div class="b-movie__image" style="background-image: url(images/content/movie_01.jpg)"></div>
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus b-icon__minus"></div>
+									<div class="b-icon__stars">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info b-icon__none">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-active">
+						<img src="images/content/movie_01.jpg" height="450" width="300" alt="" class="b-movie__image">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus b-icon__minus"></div>
+									<div class="b-icon__stars">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info b-icon__none">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-hover">
+						<img src="images/content/movie_01.jpg" height="450" width="300" alt="" class="b-movie__image">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info b-icon__none">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-play">
+						<img src="images/content/movie_01.jpg" height="450" width="300" alt="" class="b-movie__image">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info b-icon__none">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-coomingSoon">
+						<img src="images/content/movie_01.jpg" height="450" width="300" alt="" class="b-movie__image">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-pay">
+						<img src="images/content/movie_01.jpg" height="450" width="300" alt="" class="b-movie__image">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+						</header>
+						</div>
+						<div class="b-movie__info">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-user">
+						<img src="images/content/movie_01.jpg" height="450" width="300" alt="" class="b-movie__image">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info b-icon__none">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info b-icon__none">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-ad">
+						<img src="images/content/ad_banner.png" height="450" width="300" alt="" class="b-movie__image">
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

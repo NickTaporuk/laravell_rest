@@ -1,0 +1,33 @@
+
+
+/******************************************************
+					Small STAR
+******************************************************/
+.rating-small .star {
+    background: url("../icon_star.png") no-repeat scroll 0px -30px transparent;
+	height: 30px;
+	width: 32px;
+}
+.rating-small .star-btn.add {
+	margin-left: 10px;
+	cursor: pointer;
+	border: none;
+	background: url(../icon_plus_small.png);
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+
+
+
+/******************************************************
+					MEDIUM STAR
+******************************************************/
+
+
+/******************************************************
+					BIG STAR
+******************************************************/

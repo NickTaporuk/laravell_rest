@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Code Pro Bold";
+    src: url("../fonts/Code Pro Bold LC.eot");
+    src: url("../fonts/Code Pro Bold LC.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/Code Pro Bold LC.woff") format("woff"),
+         url("../fonts/Code Pro Bold LC.ttf") format("truetype"),
+         url("../fonts/Code Pro Bold LC.svg#JournalRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PFEncoreSansPro-XThin";
+    src: url("../fonts/PFEncoreSansPro-XThin.eot");
+    src: url("../fonts/PFEncoreSansPro-XThin.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/PFEncoreSansPro-XThin.woff") format("woff"),
+         url("../fonts/PFEncoreSansPro-XThin.ttf") format("truetype"),
+         url("../fonts/PFEncoreSansPro-XThin.svg#JournalRegular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+

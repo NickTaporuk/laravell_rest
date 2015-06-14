@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Code Pro Bold";
+    src: url("../fonts/Code Pro Bold LC.eot");
+    src: url("../fonts/Code Pro Bold LC.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/Code Pro Bold LC.woff") format("woff"),
+         url("../fonts/Code Pro Bold LC.ttf") format("truetype"),
+         url("../fonts/Code Pro Bold LC.svg#JournalRegular") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+

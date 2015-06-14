@@ -1,0 +1,616 @@
+/* ------ * Reset * --------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+ 
+/* HTML5 display-role reset for older browsers */
+ 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+ 
+body {
+    line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+}
+ 
+ol, ul {
+  list-style: none; }
+ 
+blockquote, q {
+  quotes: none; }
+ 
+blockquote :before, blockquote :after {
+    content: '';
+    content: none; 
+}
+a {
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clearfix:before,
+.clearfix:after {
+   content: "";
+   display: table;
+}
+.clearfix:after {
+   clear: both;
+}
+.clearfix {
+   zoom: 1;
+}
+
+
+
+.life-card_page {
+  background: #fff;
+  padding-bottom: 50px;
+  line-height: 1;
+}
+.life-container {
+  width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+.life-container p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 44px;
+  color: #424446;
+  font-weight: 300;
+}
+.life-container .life-img_container {
+  width: 100%;
+}
+.life-img_container img {
+  width: 100%;
+  display: block;
+  margin-top: 44px;
+}
+.life-container li {
+  margin-top: 44px;
+}
+.life-container ul li  {
+  font-size: 18px;
+  color: #424446;
+  line-height: 1.5;
+  font-weight: 300;
+  list-style: none;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  position: relative;
+}
+.life-container ul li:last-child {
+  margin-bottom: 0;
+}
+.life-container ul li:before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #F8C255;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+.life-card_gallery {
+  width: 1020px;
+  margin: 44px auto 0;
+}
+.life-card_gallery .life-gallery_item {
+  display: block;
+  width: 505px;
+  height: 340px;
+  background-position: center;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-size: cover;
+}
+.life-card_gallery .life-gallery_item:nth-child(2n) {
+  margin-right: 0;
+}
+.life-card_gallery .life-gallery_item:nth-last-child(1),
+.life-card_gallery .life-gallery_item:nth-last-child(2) {
+  margin-bottom: 0;
+}
+.life-container article {
+  margin-top: 44px;
+  font-size: 18px;
+  color: #424446;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.8;
+  border-left: 5px solid #F8C255;
+  padding-left: 18px;
+}
+.life-bg_main {
+  height: 850px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+/* Life events */ 
+.life-events {
+  padding: 20px 0;
+  text-align: center;
+  background: #E5EAED;
+}
+.life-events .life-event {
+  display: none;
+  width: 180px;
+  height: 180px;
+  position: relative;
+  margin-left: 12px;
+  margin-right: 8px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  background-position: center;
+  background-size: cover;
+}
+.life-event .life-event_link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  right: 0;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 13%, rgba(0,0,0,.8) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop 13%,rgba(255,255,255,0)), color-stop(100%,rgba(0,0,0,.8)));
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 13%,rgba(0,0,0,.8) 100%);
+  background: -o-linear-gradient(top,  rgba(255,255,255,0) 13%,rgba(0,0,0,.8) 100%);
+  background: -ms-linear-gradient(top,  rgba(255,255,255,0) 13%,rgba(0,0,0,.8) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 13%,rgba(0,0,0,.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+}
+.life-event_link .life-event_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 20px 20px;
+  text-align: left;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+
+}
+/* Life events end */ 
+
+/* Reviews Container */
+/* Reviews Container end */
+.cosial_icon_box
+{
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid rgba(211,215,219,1);
+}
+.cosial_icon_boxBot {
+  border-top: 1px solid rgba(211,215,219,1);
+  border-bottom: none;
+  margin-top: 44px;
+}
+.cosial_icon_table {
+  color: #000;
+  border-collapse: collapse;
+  border: none;
+  border-spacing: 0;
+}
+.cosial_icon_boxBot .cosial_icon_table {
+  width: 400px;
+}
+.cosial_icon_table tr, td {
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #292929;
+  font-weight: 300;
+  height: 60px;
+  padding-left: 1px;
+  border-right: 1px solid rgba(211,215,219,1);
+}
+.cosial_icon_table tr, td:first-child {
+  border-left: 1px solid rgba(211,215,219,1);
+}
+.cosial_icon_table .td_icon
+{
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.td_close
+{
+  background: #919ca4;
+  height: 100%;
+  width: 105px;
+}
+.news-banner_header .td_close {
+  background: none;
+}
+.icon_close
+{
+  display: none;
+}
+.cosial_icon_box .review
+{
+  color:#919ca4;
+  font-weight: bold;
+  font-size:14px;
+  padding-left:10px;
+}
+.news-banner_header .review
+{
+  color:#fff;
+  font-weight: bold;
+  font-size:14px;
+  padding-left:10px;
+}
+.icon_close_text {
+color: #fff;
+font-weight: 700;
+font-size: 13px;
+display: block;
+width: 100%;
+text-align: center;
+vertical-align: middle;
+}
+.btn-upstair {
+  position: fixed;
+  bottom: 80px;
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  right: 30px;
+  background-image: url(../images/icons/upstair.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+  cursor: pointer;
+  z-index: 1;
+}
+.life-footer_fixed {
+  position: fixed;
+  bottom: 0;
+  z-index: 50;
+  width: 100%;
+  left: 0;
+  height: 50px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid #E5EAED;
+}
+.life-footer_fixed .life-news {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 490px;
+  padding: 10px 50px;
+}
+.life-footer_fixed .life-prev {
+  float: left;
+  border-right: 1px solid #E5EAED;
+  text-align: right;
+}
+.life-footer_fixed .life-prev .life-news_text:before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  background: url(../images/icons/life-arrows.png);
+  margin-right: 4px;
+  opacity: .5;
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  margin-top: -5px;
+}
+.life-footer_fixed .life-news:hover .life-news_text:before {
+  opacity: 1;
+}
+.life-footer_fixed .life-prev .life-news_text {
+  margin-right: 10px;
+}
+.life-footer_fixed .life-next .life-news_text {
+  margin-left: 10px;
+}
+.life-footer_fixed .life-next {
+  float: right;
+  border-left: 1px solid #E5EAED;
+}
+.life-footer_fixed .life-next .life-news_text:after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  background: url(../images/icons/life-arrows.png) -10px 0;
+  margin-left: 4px;
+  position: relative;
+  top: 50%;
+  opacity: .5;
+  margin-top: -5px;
+  position: absolute;
+  right: -12px;
+}
+.life-footer_fixed .life-news:hover .life-news_text:after {
+  opacity: 1;
+}
+.life-footer_fixed .news_img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+}
+.life-footer_fixed .life-news_text {
+  display: inline-block;
+  font-size: 12px;
+  color: #919ca4;
+  font-weight: 700;
+  line-height: 1.2;
+  vertical-align: middle;
+  max-width: 340px;
+  position: relative;
+}
+
+.life-footer_fixed .life-news:hover .life-news_text {
+  color: #424446;
+}
+
+/*************************************************************
+
+                MEDIA 768
+
+*************************************************************/
+@media screen and (max-width: 1023px) {
+  .life-card_gallery .life-gallery_item {
+    width: 379px;
+  }
+  .life-footer_fixed .life-news {
+    padding: 10px 20px;
+  }
+  .life-card_gallery {
+    width: 768px;
+  }
+  .life-footer_fixed .life-prev {
+    padding-left: 30px;
+  }
+  .life-footer_fixed .life-next {
+    padding-right: 30px;
+  }
+  .life-footer_fixed .life-next .life-news_text {
+    margin-left: 5px;
+  }
+  .life-footer_fixed .life-prev .life-news_text {
+    margin-right: 5px;
+  }
+}
+/*************************************************************
+
+                MEDIA 1024 END
+
+*************************************************************/
+
+
+/*************************************************************
+
+                MEDIA 640
+
+*************************************************************/
+@media screen and (max-width: 767px) {
+  .life-card_page {
+    padding-bottom: 0;
+  }
+  .life-container {
+    width: 580px;
+  }
+  .life-events .life-event {
+    display: inline-block;
+  }
+  .life-card_gallery {
+    width: 580px;
+  }
+  .life-container ul li  {
+    font-size: 16px;
+  }
+  .life-card_gallery .life-gallery_item {
+    width: 285px;
+    height: 190px;
+  }
+  .life-img_container img {
+    margin-top: 30px;
+  }
+  .life-container ul li:before {
+    top: 4px;
+  }
+  .life-container p {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+  .life-container li {
+    margin-top: 30px;
+  }
+  .life-container article {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 30px;
+  }
+  .life-bg_main {
+    height: 430px;
+    margin-top: 35px;
+  }
+  .life-footer_fixed {
+    display: none;
+  }
+  .btn-upstair {
+    display: none;
+  }
+  .cosial_icon_boxTop td,
+  .cosial_icon_boxTop tr {
+    height: 50px;
+  }
+  .cosial_icon_boxTop .cosial_icon_table .td_icon {
+    width: 50px;
+  }
+  .cosial_icon_boxTop .cosial_icon_table .review {
+    padding-left: 5px;
+  }
+  .cosial_icon_boxTop .td_close {
+    width: 50px;
+  }
+  .cosial_icon_boxTop .icon_close_text {
+    font-size: 0px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../images/icons/icon_close_white.png) no-repeat 0 0;
+  }
+  .cosial_icon_boxBot {
+    margin-top: 35px;
+  }
+}
+/*************************************************************
+
+                MEDIA 640 END
+
+*************************************************************/
+
+/*************************************************************
+
+                MEDIA 480
+
+*************************************************************/
+@media screen and (max-width: 639px) {
+  .life-container,
+  .life-card_gallery {
+    width: 430px;
+  }
+  .life-container ul li  {
+    font-size: 14px;
+  }
+  .life-container p,
+  .life-container article {
+    font-size: 12px;
+  }
+  .life-card_gallery .life-gallery_item {
+    width: 210px;
+  }
+  .life-bg_main {
+    height: 320px;
+  }
+  .life-events .life-event {
+    width: 130px;
+    height: 130px;
+  }
+  .life-event_link .life-event_text {
+    padding: 0 10px 10px;
+    font-size: 11px;
+    line-height: 1.3;
+  }
+  .cosial_icon_boxBot .cosial_icon_table {
+    width: 240px;
+  }
+  .cosial_icon_boxBot tr,
+  .cosial_icon_boxBot td {
+    height: 50px;
+  }
+}
+/*************************************************************
+
+                MEDIA 480 END
+
+*************************************************************/
+
+/*************************************************************
+
+                MEDIA 320
+
+*************************************************************/
+@media screen and (max-width: 479px) {
+  .life-container,
+  .life-card_gallery {
+    width: auto;
+    max-width: 280px;
+  }
+  .life-container article {
+    padding-left: 8px;
+  }
+  .life-container ul li  {
+    font-size: 14px;
+  }
+  .life-container p,
+  .life-container article {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .life-card_gallery .life-gallery_item {
+    width: 135px;
+    height: 90px;
+  }
+  .life-bg_main {
+    height: 320px;
+  }
+  .cosial_icon_boxTop .cosial_icon_table {
+    max-width: 100%;
+    width: 100%;
+  }
+  .life-events .life-event {
+    width: 130px;
+    height: 130px;
+  }
+  .life-event_link .life-event_text {
+    padding: 0 10px 10px;
+    font-size: 11px;
+    line-height: 1.3;
+  }
+  .cosial_icon_boxBot .cosial_icon_table {
+    width: 240px;
+  }
+  .cosial_icon_boxBot tr,
+  .cosial_icon_boxBot td {
+    height: 50px;
+  }
+  .life-events .life-event:nth-of-type(3) {
+    display: none;
+  }
+}
+/*************************************************************
+
+                MEDIA 320 END
+
+*************************************************************/

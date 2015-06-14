@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>SlavPeople</title>
+	<meta name = "description" content="Slavpeople">
+	<meta name = "keywords" content="Slavpeople">
+	<meta name="author" content="Slavpeople">
+	<!-- <link rel="shortcut icon" href="../favicon.ico"> -->
+	<link rel="stylesheet" type="text/css" href="css/book-mobile.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/jQRangeSlider-min.js"></script>
+	<script src="js/book.js"></script>
+	<script src="js/jscrollpane.min.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/book-style.css">
+</head>
+<body>
+<!-- Current page -->
+<div class="current-page">
+  <div class="current-page-name sp-video">
+    <div class="img"><img src="images/icons/sp-video-icon.png" alt=""></div>
+    <p><span>sp</span>video</p>
+  </div>
+  <div class="main-nav">
+    <div class="search-wrap">
+       <form class="search-form">
+        <input type="text" class="search-form_input">
+        <a href="javascript:PopUpShow()" class="search-form_btn"></a>
+      </form>
+    </div>
+    <div class="menu-wrap">
+      <button class="menu-btn dropdown-open">
+        <span class="menu-btn_line"></span>
+        <span class="menu-btn_line"></span>
+        <span class="menu-btn_line"></span>
+      </button>
+      <nav class="menu-nav nav-dropdown">
+        <ul class="menu-list">
+          <li class="menu-list_item"><a href="#" class="menu-item_link">sp top</a></li>
+          <li class="menu-list_item active"><a href="#" class="menu-item_link">Каталог</a></li>
+          <li class="menu-list_item"><a href="#" class="menu-item_link">Отложенные</a></li>
+          <li class="menu-list_item"><a href="#" class="menu-item_link">отбор</a></li>
+          <li class="menu-list_item"><a href="#" class="menu-item_link">мой рейтинг<span class="menu-link_quantity">2556</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- Current page end -->
+<div class="b-container__content b-catalogue">
+		<div id="b-icon-menu__menu">
+			<ul class="b-icon-menu">
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link b-icon-menu__link-text"><span class="b-icon-menu__text">все</span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu1"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu2"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu3"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu4"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu5"></span></a></li>
+			</ul>
+		</div>
+	<div class="b-content">
+		<div class="b-container__box">
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-hover">
+					<div class="b-book__image" style="background-image: url(images/content/book.png)"></div>
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-active">
+						<img src="images/content/book.png" alt="" class="b-book__image">
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus b-icon__minus"></div>
+									<div class="b-icon__stars">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-active">
+						<img src="images/content/book.png" alt="" class="b-book__image">
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus b-icon__minus"></div>
+									<div class="b-icon__stars">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-hover">
+					<img src="images/content/book.png" alt="" class="b-book__image">
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-hover">
+					<img src="images/content/book.png" alt="" class="b-book__image">
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-hover">
+					<img src="images/content/book.png" alt="" class="b-book__image">
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-hover">
+					<img src="images/content/book.png" alt="" class="b-book__image">
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-hover">
+					<img src="images/content/book.png" alt="" class="b-book__image">
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-hover">
+					<img src="images/content/book.png" alt="" class="b-book__image">
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-active">
+						<img src="images/content/book.png" alt="" class="b-book__image">
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus b-icon__minus"></div>
+									<div class="b-icon__stars">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-active">
+						<img src="images/content/book.png" alt="" class="b-book__image">
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus b-icon__minus"></div>
+									<div class="b-icon__stars">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-hover">
+					<img src="images/content/book.png" alt="" class="b-book__image">
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-active">
+						<img src="images/content/book.png" alt="" class="b-book__image">
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus b-icon__minus"></div>
+									<div class="b-icon__stars">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-active">
+						<img src="images/content/book.png" alt="" class="b-book__image">
+						<div class="b-book__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-book__header">
+								<div class="b-book__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus b-icon__minus"></div>
+									<div class="b-icon__stars">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-book__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+				<div class="b-book__header_box-title">
+					<h2 class="b-book__header_title">The Walking Dead: Descent - Exclusive Digital Booklet</h2>
+					<p class="b-book__author">Коельйо П.</p>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__book">
+					<div class="b-book b-book-ad">
+						<img src="images/content/ad_banner.png" height="450" width="300" alt="" class="b-book__image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="autocomplete-popup">
+  <form action="" class="autocomplete-popup_form clearfix">
+    <a href="javascript:PopUpHide()" class="popup-close">Отменить</a>
+    <div class="popup-search_wrap">
+      <input type="search" class="popup-search" placeholder="Поиск">
+    </div> 
+  </form>
+  <nav class="site-autocomplete_nav scroll-pane">
+    <ul class="site-autocomplete_list">
+      <li class="site-autocomplete_item">
+        <a href="/" class="site-autocomplete_link">
+          <div class="site-autocomplete_img" style="background-image: url(images/autocomplete/item1.jpg)"></div>
+          <div class="site-autocomplete_body">
+            <div class="site-autocomplete_genre films"></div>
+            <div class="rating-esmall">
+              <span class="star star-esmall-white" data-number='1'></span>
+              <span class="star star-esmall-white-active" data-number='2'></span>
+              <span class="star star-esmall-gold" data-number='3'></span>
+              <span class="star star-esmall-gold-active" data-number='4'></span>
+              <span class="star star-esmall-gold" data-number='5'></span>
+            </div>
+            <div class="site-autocomplete_footer">
+              <div class="autocomplete-name_first">Адмирал / Битва за  Мён Рян</div>
+              <div class="autocomplete-name_second">The Admiral / Myeong-ryang (2015)</div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="site-autocomplete_item">
+        <a href="/" class="site-autocomplete_link">
+          <div class="site-autocomplete_img" style="background-image: url(images/autocomplete/item1.jpg)"></div>
+          <div class="site-autocomplete_body">
+            <div class="site-autocomplete_genre films"></div>
+            <div class="rating-esmall">
+              <span class="star star-esmall-white" data-number='1'></span>
+              <span class="star star-esmall-white-active" data-number='2'></span>
+              <span class="star star-esmall-gold" data-number='3'></span>
+              <span class="star star-esmall-gold-active" data-number='4'></span>
+              <span class="star star-esmall-gold" data-number='5'></span>
+            </div>
+            <div class="site-autocomplete_footer">
+              <div class="autocomplete-name_first">Адмирал / Битва за  Мён Рян</div>
+              <div class="autocomplete-name_second">The Admiral / Myeong-ryang (2015)</div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="site-autocomplete_item">
+        <a href="/" class="site-autocomplete_link">
+          <div class="site-autocomplete_img" style="background-image: url(images/autocomplete/item1.jpg)"></div>
+          <div class="site-autocomplete_body">
+            <div class="site-autocomplete_genre films"></div>
+            <div class="rating-esmall">
+              <span class="star star-esmall-white" data-number='1'></span>
+              <span class="star star-esmall-white-active" data-number='2'></span>
+              <span class="star star-esmall-gold" data-number='3'></span>
+              <span class="star star-esmall-gold-active" data-number='4'></span>
+              <span class="star star-esmall-gold" data-number='5'></span>
+            </div>
+            <div class="site-autocomplete_footer">
+              <div class="autocomplete-name_first">Адмирал / Битва за  Мён Рян</div>
+              <div class="autocomplete-name_second">The Admiral / Myeong-ryang (2015)</div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="site-autocomplete_item">
+        <a href="/" class="site-autocomplete_link">
+          <div class="site-autocomplete_img" style="background-image: url(images/autocomplete/item1.jpg)"></div>
+          <div class="site-autocomplete_body">
+            <div class="site-autocomplete_genre cartoons"></div>
+            <div class="rating-esmall">
+              <span class="star star-esmall-white" data-number='1'></span>
+              <span class="star star-esmall-white-active" data-number='2'></span>
+              <span class="star star-esmall-gold" data-number='3'></span>
+              <span class="star star-esmall-gold-active" data-number='4'></span>
+              <span class="star star-esmall-gold" data-number='5'></span>
+            </div>
+            <div class="site-autocomplete_footer">
+              <div class="autocomplete-name_first">Адмирал / Битва за  Мён Рян</div>
+              <div class="autocomplete-name_second">The Admiral / Myeong-ryang (2015)</div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<script>
+$(document).ready(function(){
+	$(function() {
+		$( "#slider-range" ).slider({
+			range: true,
+			min: 1930,
+			max: 2015,
+			values: [ 75, 300 ],
+			slide: function( event, ui ) {
+			$( "#amount" ).val( "!" + ui.values[ 0 ] + "!" + ui.values[ 1 ] );
+			}
+		});
+		$( "#amount" ).val( "!" + $( "#slider-range" ).slider( "values", 0 ) +
+		"-" + $( "#slider-range" ).slider( "values", 1 ) );
+	});
+});
+function PopUpShow(){
+	$(".autocomplete-popup").fadeIn(300);
+	$('body').css('overflow', 'hidden');
+}
+function PopUpHide(){
+	$(".autocomplete-popup").fadeOut(300);
+	$('body').css('overflow', 'auto');
+}
+</script>
+</body>
+</html>

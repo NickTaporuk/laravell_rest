@@ -1,0 +1,345 @@
+/* ------ * Reset * --------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+ 
+/* HTML5 display-role reset for older browsers */
+ 
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+ 
+body {
+    line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+}
+ 
+ol, ul {
+  list-style: none; }
+ 
+blockquote, q {
+  quotes: none; }
+ 
+blockquote :before, blockquote :after {
+    content: '';
+    content: none; 
+}
+a {
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clearfix:before,
+.clearfix:after {
+   content: "";
+   display: table;
+}
+.clearfix:after {
+   clear: both;
+}
+.clearfix {
+   zoom: 1;
+}
+.life-card_page {
+  background: #fff;
+  padding-bottom: 50px;
+  line-height: 1;
+}
+.life-container {
+  width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+.life-container p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 44px;
+  color: #424446;
+  font-weight: 300;
+}
+.life-container .life-img_container {
+  width: 100%;
+}
+.life-img_container img {
+  width: 100%;
+  display: block;
+  margin-top: 44px;
+}
+.life-container ul {
+  margin-top: 44px;
+}
+.life-container ul li {
+  font-size: 18px;
+  color: #424446;
+  line-height: 1.5;
+  font-weight: 300;
+  list-style: none;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  position: relative;
+}
+.life-container ul li:last-child {
+  margin-bottom: 0;
+}
+.life-container ul li:before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #F8C255;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+.life-card_gallery {
+  width: 1020px;
+  margin: 44px auto 0;
+}
+.life-card_gallery .life-gallery_item {
+  display: block;
+  width: 505px;
+  height: 340px;
+  background-position: center;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.life-card_gallery .life-gallery_item:nth-child(2n) {
+  margin-right: 0;
+}
+.life-card_gallery .life-gallery_item:nth-last-child(1),
+.life-card_gallery .life-gallery_item:nth-last-child(2) {
+  margin-bottom: 0;
+}
+.life-container article {
+  margin-top: 44px;
+  font-size: 18px;
+  color: #424446;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.8;
+  border-left: 5px solid #F8C255;
+  padding-left: 18px;
+}
+.life-bg_main {
+  height: 850px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+
+/* Reviews Container */
+  .reviews-container {
+    padding-top: 30px;
+    background: #E5EAED;
+  }
+  .life-card_page .reviews-container .reviews-inner {
+    padding-top: 0;
+  }
+  .review-head {
+    background: #F2B63E;
+  }
+  .review-head .review-comments_count {
+    background: #F2B63E;
+  }
+/* Reviews Container end */
+.cosial_icon_box
+{
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid rgba(211,215,219,1);
+}
+.cosial_icon_boxBot {
+  border-top: 1px solid rgba(211,215,219,1);
+  border-bottom: none;
+  margin-top: 44px;
+}
+.cosial_icon_table {
+  color: #000;
+  border-collapse: collapse;
+  border: none;
+  border-spacing: 0;
+}
+.cosial_icon_boxBot .cosial_icon_table {
+  width: 400px;
+}
+.cosial_icon_table tr, td {
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #292929;
+  font-weight: 300;
+  height: 60px;
+  padding-left: 1px;
+  border-right: 1px solid rgba(211,215,219,1);
+}
+.cosial_icon_table tr, td:first-child {
+  border-left: 1px solid rgba(211,215,219,1);
+}
+.cosial_icon_table .td_icon
+{
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.td_close
+{
+  background: #919ca4;
+  height: 100%;
+  width: 105px;
+}
+.news-banner_header .td_close {
+  background: none;
+}
+.icon_close
+{
+  display: none;
+}
+.cosial_icon_box .review
+{
+  color:#919ca4;
+  font-weight: bold;
+  font-size:14px;
+  padding-left:10px;
+}
+.news-banner_header .review
+{
+  color:#fff;
+  font-weight: bold;
+  font-size:14px;
+  padding-left:10px;
+}
+.icon_close_text {
+color: #fff;
+font-weight: 700;
+font-size: 13px;
+display: block;
+width: 100%;
+text-align: center;
+vertical-align: middle;
+}
+.btn-upstair {
+  position: fixed;
+  bottom: 80px;
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  right: 30px;
+  background-image: url(../images/icons/upstair.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+  cursor: pointer;
+  z-index: 1;
+}
+.life-footer_fixed {
+  position: fixed;
+  bottom: 0;
+  z-index: 50;
+  width: 100%;
+  left: 0;
+  height: 50px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top: 1px solid #E5EAED;
+}
+.life-footer_fixed .life-news {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 490px;
+  padding: 10px 50px;
+}
+.life-footer_fixed .life-prev {
+  float: left;
+  border-right: 1px solid #E5EAED;
+  text-align: right;
+}
+.life-footer_fixed .life-prev .life-news_text:before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  background: url(../images/icons/life-arrows.png);
+  margin-right: 4px;
+  opacity: .5;
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  margin-top: -5px;
+}
+.life-footer_fixed .life-news:hover .life-news_text:before {
+  opacity: 1;
+}
+.life-footer_fixed .life-prev .life-news_text {
+  margin-right: 10px;
+}
+.life-footer_fixed .life-next .life-news_text {
+  margin-left: 10px;
+}
+.life-footer_fixed .life-next {
+  float: right;
+  border-left: 1px solid #E5EAED;
+}
+.life-footer_fixed .life-next .life-news_text:after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  background: url(../images/icons/life-arrows.png) -10px 0;
+  margin-left: 4px;
+  position: relative;
+  top: 50%;
+  opacity: .5;
+  margin-top: -5px;
+  position: absolute;
+  right: -12px;
+}
+.life-footer_fixed .life-news:hover .life-news_text:after {
+  opacity: 1;
+}
+.life-footer_fixed .news_img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+}
+.life-footer_fixed .life-news_text {
+  display: inline-block;
+  font-size: 12px;
+  color: #919ca4;
+  font-weight: 700;
+  line-height: 1.2;
+  vertical-align: middle;
+  max-width: 340px;
+  position: relative;
+}
+
+.life-footer_fixed .life-news:hover .life-news_text {
+  color: #424446;
+}

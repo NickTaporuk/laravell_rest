@@ -1,0 +1,13 @@
+.question-container {
+	position: fixed;
+	bottom: 50px;
+	width: 200px;
+	right: -200px;
+}
+.question-open {
+	width: 60px;
+	height: 60px;
+	outline: 1px solid red;
+	position: absolute;
+	right: 100%;
+}

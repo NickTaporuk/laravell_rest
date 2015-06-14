@@ -1,0 +1,33 @@
+.header {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.sp-question {
+	margin-left: 30px;
+}
+.sp-gift {
+	margin-left: 30px;
+}
+.sp-pepsi {
+     margin-left: 30px;
+}
+.sp-dex {
+    margin-left: 30px;
+}
+#countdown ul
+{
+    display: inline-block;
+    margin: 0 auto;
+}
+#countdown li {
+	/*margin-right: 50px;*/
+	/*margin-left: 50px;*/
+    width: 17%;
+}
+#countdown li p {
+    font-size: 100px;
+    text-shadow: 0 0 16px rgba(255,255,255,.7);
+}
+.layer-timer li span {
+    text-shadow: 0 0 6px rgba(255,255,255,.5);
+}

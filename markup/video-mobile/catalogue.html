@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>SlavPeople</title>
+	<meta name = "description" content="Slavpeople">
+	<meta name = "keywords" content="Slavpeople">
+	<meta name="author" content="Slavpeople">
+	<!-- <link rel="shortcut icon" href="../favicon.ico"> -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/video.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/animate.css" />
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/video.js"></script>
+	<script src="js/star_rating.js"></script>
+</head>
+<body>
+<div class="b-container b-catalogue">
+<div class="b-header"></div>
+<div class="b-container__content">
+	<div id="b-icon-menu__menu">
+			<ul class="b-icon-menu">
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon-menu__text">все</span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu1"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu2"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu3"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu4"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu5"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu6"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu7"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu8"></span></a></li>
+				<li class="b-icon-menu__item"><a class="b-icon-menu__link"><span class="b-icon__icon-menu b-icon__icon-menu9"></span></a></li>
+			</ul>
+	</div>
+	<div class="b-container__info">
+			<div class="b-info">
+				<div class="b-info__pay-blur">
+					<a class="b-info__pay_link" href="#">
+						<span class="b-icon__pay"></span>
+					</a>
+				</div>
+				<div class="b-info__free">
+					<a class="b-info__free_link" href="#">
+						<span class="b-text__free">free</span>
+					</a>
+				</div>
+				<div class="b-info__comingSoon-blur">
+					<a class="b-info__comingSoon_link" href="#">
+						coming<br><span class="b-text__comingSoon-up">soon</span>
+					</a>
+				</div>
+				<div class="b-info__star">
+					<a class="b-star__item_link" href="#">
+						<span class="b-star"></span><span class="b-icon__show"></span>
+					</a>
+				</div>
+				<div class="b-info__date">
+					<a href="#" class="b-info__date_link">
+						по<br><span class="b-text__date">ДАТЕ</span>
+					</a>
+				</div>
+				<div class="b-info__kinopoick">
+					<a class="b-info__kinopoick_link" href="#">kinopoick
+					</a>
+				</div>
+				<div class="b-info__imdb">
+					<a class="b-info__imdb_link" href="#">IMDb
+					</a>
+				</div>
+				<div class="b-info__tommato">
+					<a class="b-info__tommato_link" href="#">rotten<br><span class="b-text__tommato-up"> tomatoes</span>
+					</a>
+				</div>
+			</div>
+	</div>
+	<div class="b-content">
+		<!-- <div class="tabs">
+			<div class="b-tab-filter">
+			<a class="b-tab-filter__link-bottom"><span>Сбросить</span></a>
+				<ul class="b-tab-filter__menu">
+					<li class="b-tab-filter__item"><a class="b-tab-filter__link">Япония<span class="b-tab-filter__close"></span></a></li>
+					<li class="b-tab-filter__item"><a class="b-tab-filter__link">Комедии<span class="b-tab-filter__close"></span></a></li>
+					<li class="b-tab-filter__item"><a class="b-tab-filter__link">2008<span class="b-tab-filter__close"></span></a></li>
+					<li class="b-tab-filter__item"><a class="b-tab-filter__link">Дениель Редклифф<span class="b-tab-filter__close"></span></a></li>
+					<li class="b-tab-filter__item"><a class="b-tab-filter__link">Стивер Спилберг<span class="b-tab-filter__close"></span></a></li>
+				</ul>
+			</div>
+			<div id="tabs">
+			<ul class="b-tab tabs__controls">
+				<li class="tabs__controls_item">
+					<a href="#" class=" tabs__controls_link" data-class="first">Производство<span class="b-icon__arrowdown"></span></a>
+				</li>
+				<li class="tabs__controls_item">
+					<a href="#" class="tabs__controls_link" data-class="second">По годам<span class="b-icon__arrowdown"></span></a>
+				</li>
+				<li class="tabs__controls_item">
+					<a href="#" class="tabs__controls_link" data-class="third">По жанру<span class="b-icon__arrowdown"></span></a>
+				</li>
+				<li class="tabs__controls_item">
+					<a href="#" class="tabs__controls_link" data-class="fourth">По актерам<span class="b-icon__arrowdown"></span></a>
+				</li>
+				<li class="tabs__controls_item">
+					<a href="#" class="tabs__controls_link" data-class="fifth">По режиссёрам<span class="b-icon__arrowdown"></span></a>
+				</li>
+				<li class="tabs__controls_item">
+					<a href="#" class="tabs__controls_link" data-class="sixth">Язык<span class="b-icon__arrowdown"></span></a>
+				</li>
+				<li class="tabs__controls_item">
+					<a href="#" class="tabs__controls_link" data-class="seventh">Перевод<span class="b-icon__arrowdown"></span></a>
+				</li>
+			</ul>
+			<div class="b-tab-sections">
+				<div class="country b-tab__section tabs__item_first tab-active">
+					<ul class="b-submenu">
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_001" src="images/flags/icon_flag001.jpg" height="12" width="16" alt="">
+								<span class="b-submenu__link_text">Хорватия</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_002" src="images/flags/icon_flag002.jpg" alt="">
+								<span class="b-submenu__link_text">Германия</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_003" src="images/flags/icon_flag003.jpg" alt="">
+								<span class="b-submenu__link_text">Чехия</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_004" src="images/flags/icon_flag004.jpg" alt="">
+							<span class="b-submenu__link_text">Швейцария</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_005" src="images/flags/icon_flag005.jpg" alt="">
+								<span class="b-submenu__link_text">Франция</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_006" src="images/flags/icon_flag006.jpg" alt="">
+								<span class="b-submenu__link_text">Италия</span>
+							</a>
+						</li>
+
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_001" src="images/flags/icon_flag001.jpg" height="12" width="16" alt="">
+								<span class="b-submenu__link_text">Хорватия</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_002" src="images/flags/icon_flag002.jpg" alt="">
+								<span class="b-submenu__link_text">Германия</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_003" src="images/flags/icon_flag003.jpg" alt="">
+								<span class="b-submenu__link_text">Чехия</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_004" src="images/flags/icon_flag004.jpg" alt="">
+							<span class="b-submenu__link_text">Швейцария</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_005" src="images/flags/icon_flag005.jpg" alt="">
+								<span class="b-submenu__link_text">Франция</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_006" src="images/flags/icon_flag006.jpg" alt="">
+								<span class="b-submenu__link_text">Италия</span>
+							</a>
+						</li>
+
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_001" src="images/flags/icon_flag001.jpg" height="12" width="16" alt="">
+								<span class="b-submenu__link_text">Хорватия</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_002" src="images/flags/icon_flag002.jpg" alt="">
+								<span class="b-submenu__link_text">Германия</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_003" src="images/flags/icon_flag003.jpg" alt="">
+								<span class="b-submenu__link_text">Чехия</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_004" src="images/flags/icon_flag004.jpg" alt="">
+							<span class="b-submenu__link_text">Швейцария</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_005" src="images/flags/icon_flag005.jpg" alt="">
+								<span class="b-submenu__link_text">Франция</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_006" src="images/flags/icon_flag006.jpg" alt="">
+								<span class="b-submenu__link_text">Италия</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="year b-tab__section tabs__item_second">
+					<div class="b-submenu">
+						<a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Найти</span></a>
+						<p>
+							<label for="amount">Price range:</label>
+							<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+						</p>
+						<div id="slider-range"></div>
+					</div>
+				</div>
+				<div class="genre b-tab__section tabs__item_third">
+					<ul class="b-submenu">
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Аниме</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Биография</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Боевик</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Вестерн</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Военный</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Детектив</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Детский</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Документальный</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Драма</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">История</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">История</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Комедия</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Короткометражка</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Криминал</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Мелодрама</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Мистика</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Мюзикл</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Нуар</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Приключения</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Семейный</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Триллер</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ужасы</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Фантастика </span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Фэнтези</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Эротика</span></a></li>
+					</ul>
+				</div>
+				<div class="actor b-tab__section tabs__item_fourth">
+					<ul class="b-submenu b-letter">
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">А</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Б</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">В</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Г</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ґ</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Д</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Е</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Є</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ж</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">З</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">И</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">І</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ї</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Й</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">К</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Л</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">М</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Н</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">О</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">П</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Р</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">С</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Т</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">У</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ф</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Х</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ц</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ч</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ш</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Щ</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ю</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Я</span></a></li>
+					</ul>
+					<ul class="b-submenu b-letter">
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">А</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Б</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">В</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Г</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Д</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Е</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ё</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ж</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">З</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">И</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Й</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">К</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Л</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">М</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Н</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">О</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">П</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Р</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">С</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Т</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">У</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ф</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Х</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ц</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ч</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ш</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Щ</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ы</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Э</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ю</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Я</span></a></li>
+					</ul>
+					<ul class="b-submenu b-letter b-border">
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">A</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">B</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">C</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">D</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">E</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">F</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">G</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">H</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">I</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">J</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">K</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">L</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">M</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">N</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">O</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">P</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Q</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">R</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">S</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">T</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">U</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">V</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">W</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">X</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Y</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Z</span></a></li>
+					</ul>
+					<ul class="b-submenu b-letter__bottom">
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Say Monn</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Sikaru Mukashi</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Soko Maru</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Sara Conor</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Simon Space</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Simon Jack</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Sasha Kanevskiy</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Soro Mukasaki</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Simon Jack</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Soko Maru</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Say Monn</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Simon Space</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Soko Maru</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Simon Jack</span></a></li>
+					</ul>
+					<ul class="b-submenu b-submenu__buttom">
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link b-submenu__link-noborder"><span class="b-submenu__link_text">Показать всех</span></a></li>
+					</ul>
+				</div>
+				<div class="director b-tab__section tabs__item_fifth">
+					<ul class="b-submenu b-letter">
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">А</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Б</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">В</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Г</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ґ</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Д</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Е</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Є</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ж</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">З</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">И</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">І</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ї</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Й</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">К</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Л</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">М</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Н</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">О</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">П</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Р</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">С</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Т</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">У</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ф</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Х</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ц</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ч</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ш</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Щ</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ю</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Я</span></a></li>
+					</ul>
+					<ul class="b-submenu b-letter">
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">А</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Б</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">В</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Г</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Д</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Е</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ё</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ж</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">З</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">И</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Й</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">К</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Л</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">М</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Н</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">О</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">П</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Р</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">С</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Т</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">У</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ф</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Х</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ц</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ч</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ш</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Щ</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ы</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Э</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Ю</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Я</span></a></li>
+					</ul>
+					<ul class="b-submenu b-letter b-border">
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">A</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">B</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">C</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">D</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">E</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">F</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">G</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">H</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">I</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">J</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">K</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">L</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">M</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">N</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">O</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">P</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Q</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">R</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">S</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">T</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">U</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">V</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">W</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">X</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Y</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Z</span></a></li>
+					</ul>
+					<ul class="b-submenu b-letter__bottom">
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Say Monn</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Sikaru Mukashi</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Soko Maru</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Sara Conor</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Simon Space</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Simon Jack</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Sasha Kanevskiy</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Soro Mukasaki</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Simon Jack</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Soko Maru</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Say Monn</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Simon Space</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Soko Maru</span></a></li>
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link"><span class="b-submenu__link_text">Simon Jack</span></a></li>
+					</ul>
+					<ul class="b-submenu b-submenu__buttom">
+						<li class="b-submenu__item"><a href="#" class="b-submenu__link b-submenu__link-noborder"><span class="b-submenu__link_text">Показать всех</span></a></li>
+					</ul>
+
+				</div>
+				<div class="language b-tab__section tabs__item_sixth">
+					<ul class="b-submenu">
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_001" src="images/flags/icon_flag001.jpg" height="12" width="16" alt="">
+								<span class="b-submenu__link_text">Хорватский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_002" src="images/flags/icon_flag002.jpg" alt="">
+								<span class="b-submenu__link_text">Итальянский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_003" src="images/flags/icon_flag003.jpg" alt="">
+								<span class="b-submenu__link_text">Чешский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_004" src="images/flags/icon_flag004.jpg" alt="">
+							<span class="b-submenu__link_text">Швейцарский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_005" src="images/flags/icon_flag005.jpg" alt="">
+								<span class="b-submenu__link_text">Французский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_006" src="images/flags/icon_flag006.jpg" alt="">
+								<span class="b-submenu__link_text">Итальянский</span>
+							</a>
+						</li>
+
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_001" src="images/flags/icon_flag001.jpg" height="12" width="16" alt="">
+								<span class="b-submenu__link_text">Хорватский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_002" src="images/flags/icon_flag002.jpg" alt="">
+								<span class="b-submenu__link_text">Итальянский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_003" src="images/flags/icon_flag003.jpg" alt="">
+								<span class="b-submenu__link_text">Чешский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_004" src="images/flags/icon_flag004.jpg" alt="">
+							<span class="b-submenu__link_text">Швейцарский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_005" src="images/flags/icon_flag005.jpg" alt="">
+								<span class="b-submenu__link_text">Французский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_006" src="images/flags/icon_flag006.jpg" alt="">
+								<span class="b-submenu__link_text">Итальянский</span>
+							</a>
+						</li>
+
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_001" src="images/flags/icon_flag001.jpg" height="12" width="16" alt="">
+								<span class="b-submenu__link_text">Хорватский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_002" src="images/flags/icon_flag002.jpg" alt="">
+								<span class="b-submenu__link_text">Итальянский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_003" src="images/flags/icon_flag003.jpg" alt="">
+								<span class="b-submenu__link_text">Чешский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_004" src="images/flags/icon_flag004.jpg" alt="">
+							<span class="b-submenu__link_text">Швейцарский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_005" src="images/flags/icon_flag005.jpg" alt="">
+								<span class="b-submenu__link_text">Французский</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_006" src="images/flags/icon_flag006.jpg" alt="">
+								<span class="b-submenu__link_text">Итальянский</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="translation b-tab__section tabs__item_seventh">
+					<ul class="b-submenu">
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_001" src="images/flags/icon_flag001.jpg" height="12" width="16" alt="">
+								<span class="b-submenu__link_text">Lost Films</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_003" src="images/flags/icon_flag002.jpg" alt="">
+								<span class="b-submenu__link_text">Alex Films</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_004" src="images/flags/icon_flag003.jpg" alt="">
+								<span class="b-submenu__link_text">Первый канал</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_005" src="images/flags/icon_flag004.jpg" alt="">
+							<span class="b-submenu__link_text">Inter</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_006" src="images/flags/icon_flag005.jpg" alt="">
+								<span class="b-submenu__link_text">Студия моего фильма</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_001" src="images/flags/icon_flag006.jpg" alt="">
+								<span class="b-submenu__link_text">Live Translate</span>
+							</a>
+						</li>
+
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_002" src="images/flags/icon_flag001.jpg" height="12" width="16" alt="">
+								<span class="b-submenu__link_text">DLIQ</span>
+							</a>
+						</li>
+						<li class="b-submenu__item">
+							<a href="#" class="b-submenu__link">
+								<img class="b-icon__flag b-icon__flag_003" src="images/flags/icon_flag002.jpg" alt="">
+								<span class="b-submenu__link_text">Latic MO</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="b-container__info">
+			<div class="b-info">
+				<div class="b-info__title">Сортировать<br>по рейтингу:</div>
+				<div class="b-info__pay">
+					<a class="b-info__pay_link" href="#">
+						<span class="b-icon__pay"></span>
+					</a>
+				</div>
+				<div class="b-info__free">
+					<a class="b-info__free_link" href="#">
+						<span class="b-text__free">free</span>
+					</a>
+				</div>
+				<div class="b-info__comingSoon">
+					<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+						coming<br><span class="b-text__comingSoon-up">soon</span>
+					</a>
+				</div>
+				<div class="b-info__date b-icon__none">
+					<a href="#" class="b-info__date_link">
+						по<br><span class="b-text__date">ДАТЕ</span>
+					</a>
+				</div>
+				<div class="b-info__imdb">
+					<a class="b-info__imdb_link" href="#">IMDB
+					</a>
+				</div>
+				<div class="b-info__kinopoick">
+					<a class="b-info__kinopoick_link" href="#">kinopoisk
+					</a>
+				</div>
+				<div class="b-info__rotten">
+					<a class="b-info__rotten_link" href="#">rotten<br><span class="b-text__rotten-down">tomatoes</span>
+					</a>
+				</div>
+			</div>
+		</div> -->
+		<div class="b-container__box">
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-white">
+						<div class="b-movie__image" style="background-image: url(images/content/movie_01.jpg)"></div>
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus b-icon__minus"></div>
+									<div class="b-icon__stars">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white" data-number="1"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white" data-number="2"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white" data-number="3"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white" data-number="4"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white" data-number="5"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info b-icon__none">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-active">
+						<img src="images/content/movie_01.jpg" height="450" width="300" alt="" class="b-movie__image">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus b-icon__minus"></div>
+									<div class="b-icon__stars">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-gold"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info b-icon__none">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-hover">
+						<img src="images/content/movie_01.jpg" height="450" width="300" alt="" class="b-movie__image">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info b-icon__none">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-play">
+						<img src="images/content/movie_01.jpg" height="450" width="300" alt="" class="b-movie__image">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info b-icon__none">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-coomingSoon">
+						<img src="images/content/movie_01.jpg" height="450" width="300" alt="" class="b-movie__image">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur">
+									<a class="b-info__comingSoon_link" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-pay">
+						<img src="images/content/movie_01.jpg" height="450" width="300" alt="" class="b-movie__image">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+						</header>
+						</div>
+						<div class="b-movie__info">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-user">
+						<img src="images/content/movie_01.jpg" height="450" width="300" alt="" class="b-movie__image">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info b-icon__none">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie">
+						<div class="b-movie__play">
+							<a class="b-play" href=""><span class="b-icon__play"></span></a>
+							<header class="b-movie__header">
+								<h2 class="b-movie__header_title">Название фильма</h2>
+								<div class="b-movie__header_box">
+									<div class="b-icon__close"></div>
+									<div class="b-icon__plus"></div>
+									<div class="b-icon__stars b-stars-white">
+										<ul class="b-star__menu">
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white-active"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+											<li class="b-star__item"><span class="b-star b-star__small-white"></span></li>
+										</ul>
+									</div>
+								</div>
+							</header>
+						</div>
+						<div class="b-movie__info b-icon__none">
+							<div class="b-info">
+								<div class="b-info__comingSoon-blur b-icon__none">
+									<a class="b-info__comingSoon_link b-text__comingSoon" href="#">
+									coming<br>
+										<span class="b-text__comingSoon-up">soon</span>
+									</a>
+								</div>
+								<div class="b-info__pay-blur b-icon__none">
+									<a class="b-info__pay_link" href="#">
+										<span class="b-icon__pay"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="b-movie__user b-icon__none">
+							<ul class="b__user">
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+								<li class="b-user__item">
+									<a class="b-user__link">
+										<img class="b-user__image" src="images/content/user_small.png" alt="">
+									</a>
+								</li>
+							</ul>
+							<header class="b-user__title">
+								<p class="b-user__title_text"><span class="b-user__title_text-color">Авторизуйтесь</span> чтоб увидеть рейтинг ваших друзей.</p>
+							</header>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="b-box">
+				<div class="b-box__movie">
+					<div class="b-movie b-movie-ad">
+						<img src="images/content/ad_banner.png" height="450" width="300" alt="" class="b-movie__image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body {	
+	overflow: auto;
+}
+.wrapper {
+	width: 1024px;
+}
+.text-info-inner {
+	width: 480px;
+	height: 670px;
+	top: 50px;
+}

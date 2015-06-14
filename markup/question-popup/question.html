@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>404 Error</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/question.css">
+  </head>
+<body>
+  <div class="question-container">
+    <div class="question-open"></div>
+    <div class="question-inner">
+      <div class="question-title">Вопрос 1</div>
+      <div class="question-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nihil culpa molestias veniam porro quod, quos perferendis, atque assumenda, deserunt repellendus nesciunt velit ea, officia voluptates amet vero maxime enim.</div>
+      <a href="/" class="question-miss_btn"></a>
+    </div>
+  </div>
+  <script src="js/vendor.js"></script>
+  <script>
+    $('.question-open').on('click', function(){
+      $(this).parent().toggleClass('show-question_container', function(){
+        $(this).animate({
+          'right': 0
+        })
+      });
+    });
+  </script>
+</body>
+</html>

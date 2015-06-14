@@ -1,0 +1,203 @@
+body {
+  	line-height: 1;
+	font-family: 'Open Sans', sans-serif;
+}
+#popup {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: url(../images/video-bg.jpg);
+	background-size: cover;
+	z-index: 1000;
+	overflow: auto;
+}
+.popup-close {
+	position: absolute;
+	right: 20px;
+	top: 12px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+.popup-inner {
+	position: absolute;
+	left: 50%;
+	width: 282px;
+	margin: auto;
+	margin-left: -141px;
+	margin-top: 72px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.popup-inner input[type="text"],
+.popup-inner input[type="password"]{
+	display: block;
+	width: 100%;
+	border: 1px solid #e0e0e0;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	 border-radius: 30px;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 15px;
+	padding-left: 29px;
+	padding-right: 29px;
+	color:#999;
+	padding-top: 7px;
+	padding-bottom: 10px;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	outline: none;
+	font-family: 'Open Sans', sans-serif;
+	color: #555;
+}
+.popup-inner .forgot-pass {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 27px;
+	display: inline-block;
+	line-height: 18px;
+	border-bottom: 1px solid #fff;
+
+}
+.popup-inner .forgot-pass:hover {
+	border-bottom-color: transparent;
+}
+.popup-inner .popup-text {
+	font-size: 110%;
+	color: #fff;
+	font-weight: 300;
+	margin: 20px 0 20px 0;
+}
+.popup-inner input::-webkit-input-placeholder {
+	color:#999;
+	font-weight: 300;
+}
+.popup-inner input::-moz-placeholder {
+	color:#999;
+	font-weight: 300;
+	}/* Firefox 19+ */
+.popup-inner input:-moz-placeholder {
+	color:#999;
+	font-weight: 300;
+}/* Firefox 18- */
+.popup-inner input:-ms-input-placeholder {
+	color:#999;
+	font-weight: 300;
+}
+.popup-inner input:-input-placeholder {
+	color:#999;
+	font-weight: 300;
+}
+.popup-inner .btn-enter {
+	outline: none;
+	cursor: pointer;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #fff;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	 border-radius: 30px;
+	background: #51c4d4;
+	font-weight: bold;
+	display: block;
+	border: none;
+	width: 100%;
+	margin-top: 12px;
+	padding: 0;
+	position: relative;
+	-webkit-transition: 0.3s;
+	   -moz-transition: 0.3s;
+	    -ms-transition: 0.3s;
+	     -o-transition: 0.3s;
+	        transition: 0.3s;
+}
+.popup-inner .btn-enter:hover {
+	background: #7ed3df;
+}
+.popup-inner form {
+	margin-top: 20px;
+	text-align: center;
+}
+.popup-text{
+	display: none;
+}
+.popup-text-error{
+	display: none;
+	color: #ff090c;
+}
+.popup-social {
+	margin: 40px auto 0;
+}
+.popup-social  .auto {
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	line-height: 14px;
+	margin-bottom: 18px;
+}
+.popup-social .social-icon {
+	background-size: auto 220px;
+	display: inline-block;
+}
+.social-icon__facebook {
+	display: inline-block;
+    background: url(../images/icon.png) no-repeat;
+    background-position: -70px -13px;
+    width: 20px;
+    height: 22px;
+    z-index: 666;
+    margin: 0 8px;
+}
+.social-icon__odnoklassniki {
+	display: inline-block;
+    background: url(../images/icon.png);
+    background-position: -177px -15px;
+    width: 20px;
+    height: 19px;
+    z-index: 666;
+    margin: 0 6px;
+}
+.social-icon__google {
+	display: inline-block;
+    background: url(../images/icon.png);
+    background-position: -175px -172px;
+    width: 25px;
+    height: 20px;
+    z-index: 666;
+    margin: 0 2px;
+}
+.social-icon__vkontakte {
+	display: inline-block;
+    background: url(../images/icon.png);
+    background-position: -13px -15px;
+    width: 25px;
+    height: 20px;
+    z-index: 666;
+}
+.social-icon__twitter {
+	display: inline-block;
+    background: url(../images/icon.png);
+    background-position: -123px -14px;
+    width: 25px;
+    height: 20px;
+    z-index: 666;
+}
+.social-icon .social-icon__twitter
+{
+    margin: 0 5px 0 10px !important;
+}
+

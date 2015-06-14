@@ -1,0 +1,443 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>News Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/news-style.css">
+  </head>
+<body class="news-page">
+<!-- Current page -->
+<div class="current-page">
+  <div class="current-page-name sp-news">
+    <div class="img"><img src="images/icons/sp-news-icon.png" alt=""></div>
+    <p><span>sp</span>news</p>
+  </div>
+
+  <div class="news-category_filter">
+    <nav class="main-news_filter">
+      <div class="search-wrap">
+        <form class="search-form">
+          <input type="text" class="search-form_input">
+          <a href="javascript:PopUpShow()" class="search-form_btn"></a>
+        </form>
+      </div>
+      <button class="main-filter_btn">
+        <span class="filter-btn_line"></span>
+        <span class="filter-btn_line"></span>
+        <span class="filter-btn_line"></span>
+      </button>
+      <ul class="main-filter_list nav-dropdown">
+        <li class="main-filter_item no-under_filter">
+          <a href="#" class="main-filter_link">
+            <span class="main-filter_icon" style="background-image: url(images/filter-icons/item1.png)"></span>
+            Все
+          </a>
+        </li>
+        <li class="main-filter_item active">
+          <a href="#" class="main-filter_link" data-target="ukr">
+            <span class="main-filter_icon" style="background-image: url(images/filter-icons/item2.png)"></span>
+            Украина
+          </a>
+        </li>
+        <li class="main-filter_item">
+          <a href="#" class="main-filter_link" data-target="world">
+            <span class="main-filter_icon" style="background-image: url(images/filter-icons/item3.png)"></span>
+            Мир
+          </a>
+        </li>
+        <li class="main-filter_item">
+          <a href="#" class="main-filter_link" data-target="finances">
+            <span class="main-filter_icon" style="background-image: url(images/filter-icons/item4.png)"></span>
+            Финансы
+          </a>
+        </li>
+        <li class="main-filter_item">
+          <a href="#" class="main-filter_link" data-target="business">
+            <span class="main-filter_icon" style="background-image: url(images/filter-icons/item5.png)"></span>
+            Бизнес
+          </a>
+        </li>
+        <li class="main-filter_item">
+          <a href="#" class="main-filter_link">
+            <span class="main-filter_icon" style="background-image: url(images/filter-icons/item6.png)"></span>
+            Силовые структуры
+          </a>
+        </li>
+        <li class="main-filter_item">
+          <a href="#" class="main-filter_link">
+            <span class="main-filter_icon" style="background-image: url(images/filter-icons/item7.png)"></span>
+            Наука и техника
+          </a>
+        </li>
+        <li class="main-filter_item">
+          <a href="#" class="main-filter_link" data-target="weapons">
+            <span class="main-filter_icon" style="background-image: url(images/filter-icons/item8.png)"></span>
+            Оружие
+          </a>
+        </li>
+        <li class="main-filter_item">
+          <a href="#" class="main-filter_link">
+            <span class="main-filter_icon" style="background-image: url(images/filter-icons/item9.png)"></span>
+            Спорт
+          </a>
+        </li>
+        <li class="main-filter_item">
+          <a href="#" class="main-filter_link">
+            <span class="main-filter_icon" style="background-image: url(images/filter-icons/item10.png)"></span>
+            Культура
+          </a>
+        </li>
+        <li class="main-filter_item">
+          <a href="#" class="main-filter_link">
+            <span class="main-filter_icon" style="background-image: url(images/filter-icons/item11.png)"></span>
+            Интернет и СМИ
+          </a>
+        </li>
+        <li class="main-filter_item">
+          <a href="#" class="main-filter_link">
+            <span class="main-filter_icon" style="background-image: url(images/filter-icons/item12.png)"></span>
+            Из жизни
+          </a>
+        </li>
+        
+        <li class="main-filter_item">
+          <a href="#" class="main-filter_link">
+            <span class="main-filter_icon" style="background-image: url(images/filter-icons/item13.png)"></span>
+            Происшествия
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<nav class="under-filter ukr">
+  <div class="under-filter_inner">
+    <div class="under-filter_list clearfix">
+      <div class="under-filter_item active"><a href="#" class="under-filter_link">Все</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Политика</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Общество</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Преступность</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Происшествия</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Катастрофы</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Конфликты</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Конфликты</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Конфликты</a></div>
+    </div>
+  </div>
+</nav>
+<nav class="under-filter world">
+  <div class="under-filter_inner">
+    <div class="under-filter_list clearfix">
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Все</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Политика</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Общество</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Преступность</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Происшествия</a></div>
+    </div>
+  </div>
+</nav>
+<nav class="under-filter finances">
+  <div class="under-filter_inner">
+    <div class="under-filter_list clearfix">
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Все</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Политика</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Общество</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Преступность</a></div>
+    </div>
+  </div>
+</nav>
+<nav class="under-filter business">
+  <div class="under-filter_inner">
+    <div class="under-filter_list clearfix">
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Все</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Политика</a></div>
+    </div>
+  </div>
+</nav>
+<nav class="under-filter weapons">
+  <div class="under-filter_inner">
+    <div class="under-filter_list clearfix">
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Все</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Политика</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Общество</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Преступность</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Происшествия</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Катастрофы</a></div>
+      <div class="under-filter_item"><a href="#" class="under-filter_link">Конфликты</a></div>
+    </div>
+  </div>
+</nav>
+<div class="news-category_container">
+  <div class="news-box_wrapper clearfix">
+    <div class="top-news_stories">
+        <a href="#" class="top-news_story top-news_video">
+          <div class="top-story_section">
+            <video autoplay controls loop class="b-news"> 
+              <source src="http://demosthenes.info/assets/videos/polina.webm" type="video/webm">
+              <source src="http://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="top-news_footer">
+            <div class="clearfix">
+              <div class="top-news_date">21.01.15 13:52</div>
+              <div class="top-news_icons">
+                <div class="top-news_comments top-news_count">1245</div>
+                <div class="top-news_looks top-news_count">234</div>
+              </div>
+            </div>
+            <blockquote class="top-news_quote">«Российскому руководству не всегда стоит верить на слово»</blockquote>
+            <div class="top-news_text">Интервью пресс-секретаря Госдепартамента США Джен Псаки «Медузе»</div>
+          </div>
+        </a>
+        <a href="#" class="top-news_story">
+          <div class="top-story_section" style="background-image: url(images/top-news/item1.jpg)">
+            
+          </div>
+          <div class="top-news_footer">
+            <div class="clearfix">
+              <div class="top-news_date">21.01.15 13:52</div>
+              <div class="top-news_icons">
+                <div class="top-news_comments top-news_count">1245</div>
+                <div class="top-news_looks top-news_count">234</div>
+              </div>
+            </div>
+            <blockquote class="top-news_quote">«Российскому руководству не всегда стоит верить на слово»</blockquote>
+            <div class="top-news_text">Интервью пресс-секретаря Госдепартамента США Джен Псаки «Медузе»</div>
+          </div>
+        </a>
+        <a href="#" class="top-news_story">
+          <div class="top-story_section"  style="background-image: url(images/top-news/item1.jpg)">
+            
+          </div>
+          <div class="top-news_footer">
+            <div class="clearfix">
+              <div class="top-news_date">21.01.15 13:52</div>
+              <div class="top-news_icons">
+                <div class="top-news_comments top-news_count">1245</div>
+                <div class="top-news_looks top-news_count">234</div>
+              </div>
+            </div>
+            <blockquote class="top-news_quote">«Российскому руководству не всегда стоит верить на слово»</blockquote>
+            <div class="top-news_text">Интервью пресс-секретаря Госдепартамента США Джен Псаки «Медузе»</div>
+          </div>
+        </a>
+    </div>
+    <a href="#" class="news-box">
+      <div class="news-box_link">
+        <div class="news-box_date"><span>21.01.15 13:52</span></div>
+        <blockquote class="news-box_quote">«Российскому руководству не всегда стоит верить на слово»</blockquote>
+        <div class="news-box_text">Интервью пресс-секретаря Госдепартамента США Джен Псаки «Медузе»</div>
+        <div class="news-box_footer">
+          <div class="news-box_comments news-box_count">1245</div>
+          <div class="news-box_looks news-box_count">234</div>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="news-box">
+      <div class="news-box_link">
+        <div class="news-box_date"><span>21.01.15 13:52</span></div>
+        <blockquote class="news-box_quote">«Российскому руководству не всегда стоит верить на слово»</blockquote>
+        <div class="news-box_text">Интервью пресс-секретаря Госдепартамента США Джен Псаки «Медузе»</div>
+        <div class="news-box_footer">
+          <div class="news-box_comments news-box_count">1245</div>
+          <div class="news-box_looks news-box_count">234</div>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="news-box">
+      <div class="news-box_link">
+        <div class="news-box_date"><span>21.01.15 13:52</span></div>
+        <blockquote class="news-box_quote">«Российскому руководству не всегда стоит верить на слово»</blockquote>
+        <div class="news-box_text">Интервью пресс-секретаря Госдепартамента США Джен Псаки «Медузе»</div>
+        <div class="news-box_footer">
+          <div class="news-box_comments news-box_count">1245</div>
+          <div class="news-box_looks news-box_count">234</div>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="news-box">
+      <div class="news-box_link">
+        <div class="news-box_date"><span>21.01.15 13:52</span></div>
+        <blockquote class="news-box_quote">«Российскому руководству не всегда стоит верить на слово»</blockquote>
+        <div class="news-box_text">Интервью пресс-секретаря Госдепартамента США Джен Псаки «Медузе»</div>
+        <div class="news-box_footer">
+          <div class="news-box_comments news-box_count">1245</div>
+          <div class="news-box_looks news-box_count">234</div>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="news-box has-img" style="background-image: url(images/news-banner/item1.jpg)">
+      <div class="news-box_link">
+        <div class="news-box_date">
+          <span>21.01.15 13:52</span>
+          <div class="news-category_name">силовые структуры</div>
+        </div>
+        <blockquote class="news-box_quote">«Российскому руководству не всегда стоит верить на слово»</blockquote>
+        <div class="news-box_text">Интервью пресс-секретаря Госдепартамента США Джен Псаки «Медузе»</div>
+        <div class="news-box_footer">
+          <div class="news-box_comments news-box_count">1245</div>
+          <div class="news-box_looks news-box_count">234</div>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="news-box has-img" style="background-image: url(images/news-banner/item1.jpg)">
+      <div class="news-box_link">
+        <div class="news-box_date"><span>21.01.15 13:52</span></div>
+        <blockquote class="news-box_quote">«Российскому руководству не всегда стоит верить на слово»</blockquote>
+        <div class="news-box_text">Интервью пресс-секретаря Госдепартамента США Джен Псаки «Медузе»</div>
+        <div class="news-box_footer">
+          <div class="news-box_comments news-box_count">1245</div>
+          <div class="news-box_looks news-box_count">234</div>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="news-box has-img" style="background-image: url(images/news-banner/item1.jpg)">
+      <div class="news-box_link">
+        <div class="news-box_date"><span>21.01.15 13:52</span></div>
+        <blockquote class="news-box_quote">«Российскому руководству не всегда стоит верить на слово»</blockquote>
+        <div class="news-box_text">Интервью пресс-секретаря Госдепартамента США Джен Псаки «Медузе»</div>
+        <div class="news-box_footer">
+          <div class="news-box_comments news-box_count">1245</div>
+          <div class="news-box_looks news-box_count">234</div>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="news-box has-img" style="background-image: url(images/news-banner/item1.jpg)">
+      <div class="news-box_link">
+        <div class="news-box_date"><span>21.01.15 13:52</span></div>
+        <blockquote class="news-box_quote">«Российскому руководству не всегда стоит верить на слово»</blockquote>
+        <div class="news-box_text">Интервью пресс-секретаря Госдепартамента США Джен Псаки «Медузе»</div>
+        <div class="news-box_footer">
+          <div class="news-box_comments news-box_count">1245</div>
+          <div class="news-box_looks news-box_count">234</div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+<div class="show-all_news">
+  <button class="shaw-all_btn">Показать еще</button>
+</div>
+<!-- Main Container end -->
+<div class="autocomplete-popup">
+  <form action="" class="autocomplete-popup_form clearfix">
+    <a href="javascript:PopUpHide()" class="popup-close">Отменить</a>
+    <div class="popup-search_wrap">
+      <input type="search" class="popup-search" placeholder="Поиск">
+    </div> 
+  </form>
+  <nav class="site-autocomplete_nav scroll-pane">
+    <ul class="site-autocomplete_list">
+      <li class="site-autocomplete_item">
+        <a href="/" class="site-autocomplete_link">
+          <div class="site-autocomplete_img" style="background-image: url(images/autocomplete/item1.jpg)"></div>
+          <div class="site-autocomplete_body">
+            <div class="site-autocomplete_genre films"></div>
+            <div class="rating-esmall">
+              <span class="star star-esmall-white" data-number='1'></span>
+              <span class="star star-esmall-white-active" data-number='2'></span>
+              <span class="star star-esmall-gold" data-number='3'></span>
+              <span class="star star-esmall-gold-active" data-number='4'></span>
+              <span class="star star-esmall-gold" data-number='5'></span>
+            </div>
+            <div class="site-autocomplete_footer">
+              <div class="autocomplete-name_first">Адмирал / Битва за  Мён Рян</div>
+              <div class="autocomplete-name_second">The Admiral / Myeong-ryang (2015)</div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="site-autocomplete_item">
+        <a href="/" class="site-autocomplete_link">
+          <div class="site-autocomplete_img" style="background-image: url(images/autocomplete/item1.jpg)"></div>
+          <div class="site-autocomplete_body">
+            <div class="site-autocomplete_genre films"></div>
+            <div class="rating-esmall">
+              <span class="star star-esmall-white" data-number='1'></span>
+              <span class="star star-esmall-white-active" data-number='2'></span>
+              <span class="star star-esmall-gold" data-number='3'></span>
+              <span class="star star-esmall-gold-active" data-number='4'></span>
+              <span class="star star-esmall-gold" data-number='5'></span>
+            </div>
+            <div class="site-autocomplete_footer">
+              <div class="autocomplete-name_first">Адмирал / Битва за  Мён Рян</div>
+              <div class="autocomplete-name_second">The Admiral / Myeong-ryang (2015)</div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="site-autocomplete_item">
+        <a href="/" class="site-autocomplete_link">
+          <div class="site-autocomplete_img" style="background-image: url(images/autocomplete/item1.jpg)"></div>
+          <div class="site-autocomplete_body">
+            <div class="site-autocomplete_genre films"></div>
+            <div class="rating-esmall">
+              <span class="star star-esmall-white" data-number='1'></span>
+              <span class="star star-esmall-white-active" data-number='2'></span>
+              <span class="star star-esmall-gold" data-number='3'></span>
+              <span class="star star-esmall-gold-active" data-number='4'></span>
+              <span class="star star-esmall-gold" data-number='5'></span>
+            </div>
+            <div class="site-autocomplete_footer">
+              <div class="autocomplete-name_first">Адмирал / Битва за  Мён Рян</div>
+              <div class="autocomplete-name_second">The Admiral / Myeong-ryang (2015)</div>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="site-autocomplete_item">
+        <a href="/" class="site-autocomplete_link">
+          <div class="site-autocomplete_img" style="background-image: url(images/autocomplete/item1.jpg)"></div>
+          <div class="site-autocomplete_body">
+            <div class="site-autocomplete_genre cartoons"></div>
+            <div class="rating-esmall">
+              <span class="star star-esmall-white" data-number='1'></span>
+              <span class="star star-esmall-white-active" data-number='2'></span>
+              <span class="star star-esmall-gold" data-number='3'></span>
+              <span class="star star-esmall-gold-active" data-number='4'></span>
+              <span class="star star-esmall-gold" data-number='5'></span>
+            </div>
+            <div class="site-autocomplete_footer">
+              <div class="autocomplete-name_first">Адмирал / Битва за  Мён Рян</div>
+              <div class="autocomplete-name_second">The Admiral / Myeong-ryang (2015)</div>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  if ($(window).width() > 767) {
+    $('.top-news_stories').slick({
+      slidesToScroll: 1,
+      vertical: true,
+      arrows: false,
+      dots: true,
+      speed: 400,
+      infinite: false,
+      autoplay: true
+    });
+  } else {
+    $('.top-news_stories').slick('unslick');
+  }
+});
+function PopUpShow(){
+  $(".autocomplete-popup").fadeIn(300);
+  $('body').css('overflow', 'hidden');
+}
+function PopUpHide(){
+  $(".autocomplete-popup").fadeOut(300);
+  $('body').css('overflow', 'auto');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+html, body
+{
+	margin:0;
+	min-height:100%;
+	padding:0;
+	position:relative;
+	text-align: center;
+	font: 100%/1.5em 'Open Sans', sans-serif;
+}
+.registration {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: url(../images/form-bg.jpg);
+	background-size: cover;
+	z-index: 1000;
+	overflow: auto;
+}
+.registration-close {
+	position: absolute;
+	right: 20px;
+	top: 12px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+.registration-inner {
+	position: absolute;
+	left: 50%;
+	width: 282px;
+	margin: auto;
+	margin-left: -141px;
+	margin-top: 72px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.registration-inner .form-label {
+	font-size: 16px;
+	font-weight: 300;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding-left: 15px;
+}
+.registration-inner .form_input {
+	display: block;
+	width: 100%;
+	border: 1px solid #e0e0e0;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	 border-radius: 30px;
+	font-weight: 700;
+	font-size: 16px;
+	padding-left: 25px;
+	padding-right: 25px;
+	color:#999;
+	padding-top: 9px;
+	padding-bottom: 8px;
+	-webkit-box-izsing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	outline: none;
+	color: #555;
+}
+.registration-inner .forgot-pass {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 27px;
+	display: inline-block;
+	line-height: 18px;
+	border-bottom: 1px solid #fff;
+
+}
+.registration-inner .forgot-pass:hover {
+	border-bottom-color: transparent;
+}
+.registration-inner .form-text {
+	font-size: 110%;
+	color: #fff;
+	font-weight: 300;
+	margin: 20px 0 20px 0;
+}
+.registration-inner input::-webkit-input-placeholder {
+	color:#999;
+	font-weight: 300;
+}
+.registration-inner input::-moz-placeholder {
+	color:#999;
+	font-weight: 300;
+	}/* Firefox 19+ */
+.registration-inner input:-moz-placeholder {
+	color:#999;
+	font-weight: 300;
+}/* Firefox 18- */
+.registration-inner input:-ms-input-placeholder {
+	color:#999;
+	font-weight: 300;
+}
+.registration-inner input:-input-placeholder {
+	color:#999;
+	font-weight: 300;
+}
+.registration-inner .btn-enter {
+	outline: none;
+	cursor: pointer;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #fff;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	 border-radius: 30px;
+	background: #51c4d4;
+	font-weight: bold;
+	display: block;
+	border: none;
+	width: 100%;
+	margin-top: 20px;
+	padding: 0;
+	position: relative;
+	-webkit-transition: 0.3s;
+	   -moz-transition: 0.3s;
+	    -ms-transition: 0.3s;
+	     -o-transition: 0.3s;
+	        transition: 0.3s;
+}
