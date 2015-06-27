@@ -22,4 +22,9 @@
             </div>
         </div>
     </div>
+
+    {{--{!! Form::open(['url'=>'todos'])!!}
+    {!! Form::label('title','Title:')!!}
+    {!! Form::text('title',null,['class'=>'form-controll'])!!}
+    {!! Form::close()!!}--}}
 @stop

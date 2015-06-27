@@ -9,11 +9,11 @@ use App\Models\Customers_users ;
 class TodoAppController extends Controller {
 
     public function __construct(Session $user){
-//        dd(Customers_users::find(1));
-        if(!$user) {
+//        dd(\Auth::user());
+        /*if(!$user) {
             Session::put('user.name','Nick');
             Session::put('user.surname','Taporuk');
-        }
+        }*/
     }
 	/**
 	 * Display a listing of the resource.

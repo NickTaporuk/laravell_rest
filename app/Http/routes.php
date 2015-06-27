@@ -11,10 +11,10 @@
 |
 */
 
-//Route::get('/', 'WelcomeController@index');
+Route::get('/', 'WelcomeController@index');
 //Route::get('/', 'PostController@index');
-get('/',['as'=>'posts', 'uses' => 'PostController@index']);
-get('unpublished',['as'=>'posts.unpublished', 'uses' => 'PostController@unpublished']);
+//get('/',['as'=>'posts', 'uses' => 'PostController@index']);
+//get('unpublished',['as'=>'posts.unpublished', 'uses' => 'PostController@unpublished']);
 Route::get('home', 'HomeController@index');
 
 Route::controllers([
